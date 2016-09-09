@@ -65,11 +65,11 @@ nav.contact .contact{
     background-color:#e35885;
 }
 
-p{
-    font-size:22px;
-    font-weight:bold;
-    color:#7d9098;
-}
+/*p{*/
+    /*font-size:22px;*/
+    /*font-weight:bold;*/
+    /*color:#7d9098;*/
+/*}*/
 
 p b{
     color:#ffffff;
@@ -79,4 +79,23 @@ p b{
     border-radius:2px;
     text-transform:uppercase;
     font-size:18px;
+}
+
+.normal p {
+
+ }
+
+#grad1 {
+    width: 990px;
+    margin-bottom: 0px
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#E3DCDA, #6A6766); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#E3DCDA, #6A6766); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#E3DCDA, #6A6766); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#E3DCDA, #6A6766); /* Standard syntax (must be last) */
+}
+
+#mydiv {
+    width:990px;
+    margin: 0 auto;
 }

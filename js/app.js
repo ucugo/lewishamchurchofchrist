@@ -4,6 +4,10 @@ var churchOfChristApp = angular.module('app', ['ngRoute']);
 churchOfChristApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
 
+        .when('/',{
+            templateUrl : 'template/home.html',
+            controller  : 'appController'
+        })
         .when('/home', {
             templateUrl : 'template/home.html',
             controller  : 'appController'
