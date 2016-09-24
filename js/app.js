@@ -1,5 +1,8 @@
 
-var churchOfChristApp = angular.module('app', ['ngRoute']);
+var churchOfChristApp = angular.module('app', ['ngRoute'])
+    .controller('appController', function($scope){
+        $scope.message = 'Everyone come and see how good I look!';
+    });
 
 churchOfChristApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
@@ -28,7 +31,3 @@ churchOfChristApp.config(['$routeProvider', function($routeProvider) {
             redirectTo: '/error'
         });
 }]);
-
-churchOfChristApp.controller('appController', function($scope){
-    $scope.message = 'Everyone come and see how good I look!';
-});

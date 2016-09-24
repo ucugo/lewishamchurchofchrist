@@ -26,15 +26,10 @@ section, footer, header, aside, nav{
 	The menu
 --------------------------*/
 
-nav{
-    display:inline-block;
-    margin:60px auto 45px;
-    background-color:#5597b4;
-    box-shadow:0 1px 1px #ccc;
-    border-radius:2px;
+#navBar{
+    background: #5DADE2;
 }
-
-nav a{
+#navCol a{
     display:inline-block;
     padding: 18px 30px;
     color:#fff !important;
@@ -50,26 +45,20 @@ nav a{
     transition:background-color 0.25s;
 }
 
-nav a:first-child{
+#navCol a:first-child{
     border-radius:2px 0 0 2px;
 }
 
-nav a:last-child{
+#navCol a:last-child{
     border-radius:0 2px 2px 0;
 }
 
-nav.home .home,
-nav.about .about,
-nav.ministries .ministries,
-nav.contact .contact{
+#navCol.home .home,
+#navCol.about .about,
+#navCol.ministries .ministries,
+#navCol.contact .contact{
     background-color:#e35885;
 }
-
-/*p{*/
-    /*font-size:22px;*/
-    /*font-weight:bold;*/
-    /*color:#7d9098;*/
-/*}*/
 
 p b{
     color:#ffffff;
@@ -85,17 +74,23 @@ p b{
 
  }
 
-#grad1 {
-    width: 990px;
-    margin-bottom: 0px
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#E3DCDA, #6A6766); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#E3DCDA, #6A6766); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#E3DCDA, #6A6766); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#E3DCDA, #6A6766); /* Standard syntax (must be last) */
+#pageLayout {
+    margin: 0 auto;
+    margin-top: 4%;
+    border-style: solid;
+    border-left-width: 5px;
+    border-right-width: 5px;
 }
 
-#mydiv {
-    width:990px;
-    margin: 0 auto;
+h3 {
+    font-family: quote, sans-serif;
+}
+
+p {
+    font-family: quote, sans-serif;
+}
+
+@font-face {
+    font-family: quote;
+    src: url('/fonts/billy-argel_blessed-day/BLESD___.otf');
 }
