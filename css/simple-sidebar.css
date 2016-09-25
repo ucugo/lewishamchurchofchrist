@@ -27,7 +27,7 @@ section, footer, header, aside, nav{
 --------------------------*/
 
 #navBar{
-    background: #5DADE2;
+    background:#ffab23;
 }
 #navCol a{
     display:inline-block;
@@ -75,11 +75,24 @@ p b{
  }
 
 #pageLayout {
-    margin: 0 auto;
-    margin-top: 4%;
-    border-style: solid;
-    border-left-width: 5px;
-    border-right-width: 5px;
+    margin: 4% auto 0 0;
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+#view-layout {
+    margin: 0% 0 0 0;
+}
+
+table {
+    table-layout: fixed;
+    width: 100% !important;
+    margin:  1% 1% 1% 1%;
+}
+
+td {
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 h3 {
@@ -87,10 +100,57 @@ h3 {
 }
 
 p {
-    font-family: quote, sans-serif;
+    font-family: sans-serif;
 }
 
+label .button-label{
+    color: #080808;
+}
+/*fonts*/
 @font-face {
     font-family: quote;
-    src: url('/fonts/billy-argel_blessed-day/BLESD___.otf');
+    src: url('/lewishamchurchofchrist/fonts/Belle_Script.otf');
+}
+
+/*Buttons*/
+
+.worshipButton {
+    -moz-box-shadow: 0px 1px 0px 0px #fff6af;
+    -webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+    background-color:#ffec64;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+}
+.worshipButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+    background-color:#ffab23;
+}
+.worshipButton:active {
+    position:relative;
+    top:1px;
 }
