@@ -101,6 +101,12 @@ h3 {
 
 p {
     font-family: sans-serif;
+    text-align: left;
+}
+
+.vertical-line {
+    border-top: thick solid #f7f7f7;
+    margin-top: 2%;
 }
 
 label .button-label{
