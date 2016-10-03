@@ -5,8 +5,9 @@
 
 body{
     font:15px/1.3 'Open Sans', sans-serif;
-    color: #5e5b64;
     text-align:center;
+    background:#FFFFFF;
+    color:#000;
 }
 
 a, a:visited {
@@ -70,10 +71,6 @@ p b{
     font-size:18px;
 }
 
-.normal p {
-
- }
-
 #pageLayout {
     margin: 4% auto 0 0;
     border-right: 1px solid;
@@ -81,7 +78,7 @@ p b{
 }
 
 #view-layout {
-    margin: 0% 0 0 0;
+    margin: 3% 0 0 0;
 }
 
 table {
@@ -99,14 +96,19 @@ h3 {
     font-family: quote, sans-serif;
 }
 
-p {
-    font-family: sans-serif;
+.normal {
     text-align: left;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1.2em;
+    word-wrap:break-word;
 }
 
 .vertical-line {
     border-top: thick solid #f7f7f7;
-    margin-top: 2%;
 }
 
 label .button-label{
