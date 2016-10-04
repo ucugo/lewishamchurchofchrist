@@ -4,7 +4,7 @@
         <div class="col-sm-8">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                 <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <img ng-src="{{slide.image}}" class="img-responsive" style="height: 350px; width: 1000px">
                     <div class="carousel-caption">
                         <h1>{{slide.title}}</h1>
                         <p>{{slide.text}}</p>
@@ -14,13 +14,22 @@
         </div>
         <div class="col-sm-4">
             <p>
-                <a href="#" class="worshipButton"><label style="color: #101010; font-weight: 100">Looking for a christian home?</label><br><label>Worship <br> With <br> Us</label></a>
+                <a href="#" class="worshipButton">
+                    <label style="color: #101010; font-weight: 100">Looking for a christian home?</label><br>
+                    <label>Worship <br> With <br> Us</label>
+                </a>
             </p>
             <p>
-                <a href="#" class="worshipButton"><label style="color: #101010; font-weight: 100">Want to learn about the bible?</label><br><label>Learn <br> With <br> Us</label></a>
+                <a href="#" class="worshipButton">
+                    <label style="color: #101010; font-weight: 100">Want to learn about the bible?</label><br>
+                    <label>Learn <br> With <br> Us</label>
+                </a>
             </p>
             <p>
-                <a href="#" class="worshipButton"><label style="color: #101010; font-weight: 100">Want to get involved with us?</label><br><label>Serve <br> With <br> Us</label></a>
+                <a href="#" class="worshipButton">
+                    <label style="color: #101010; font-weight: 100">Want to get involved with us?</label><br>
+                    <label>Serve <br> With <br> Us</label>
+                </a>
             </p>
         </div>
     </div>
@@ -58,8 +67,10 @@
         <div class="col-sm-4">
             <br>
             <p><strong>We are here</strong></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d621.3232453415965!2d-0.028855470785451757!3d51.47113493411288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876025f3e830817%3A0x592ddcceacba384!2s22+Lucas+St%2C+London+SE8+4QG!5e0!3m2!1sen!2suk!4v1473449094069" width="250" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d621.3232453415965!2d-0.028855470785451
+            757!3d51.47113493411288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876025f3e830817%3A0x592ddcceacb
+            a384!2s22+Lucas+St%2C+London+SE8+4QG!5e0!3m2!1sen!2suk!4v1473449094069"
+                       width="250" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></p>
         </div>
     </div>
-</div>
 </div>
