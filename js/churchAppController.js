@@ -1,4 +1,4 @@
-app.controller('appController', function appController($scope){
+churchOfChristApp.controller('appController', ["$scope", function($scope){
     $scope.message = 'Everyone come and see how good I look!';
     $scope.myInterval = 2000;
     $scope.noWrapSlides = false;
@@ -63,4 +63,4 @@ app.controller('appController', function appController($scope){
 
         return array;
     }
-});
+}]);

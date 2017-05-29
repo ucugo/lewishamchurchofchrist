@@ -1,0 +1,23 @@
+{
+  "name": "LCOC",
+  "homepage": "https://github.com/ucugo/lewishamchurchofchrist",
+  "authors": [
+    "chigozie <ucugo@yahoo.co.uk>"
+  ],
+  "description": "church website",
+  "main": "app.js",
+  "keywords": [
+    "church",
+    "of",
+    "christ"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

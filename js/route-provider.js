@@ -1,4 +1,4 @@
-app.config(['$routeProvider', function($routeProvider) {
+churchOfChristApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
 
         .when('/',{
