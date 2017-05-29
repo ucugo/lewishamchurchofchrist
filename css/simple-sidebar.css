@@ -114,11 +114,6 @@ h3 {
 label .button-label{
     color: #080808;
 }
-/*fonts*/
-@font-face {
-    font-family: quote;
-    src: url('../../lewisham/fonts/Belle_Script.otf');
-}
 
 /*Buttons*/
 
