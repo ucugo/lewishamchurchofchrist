@@ -157,3 +157,8 @@ label .button-label{
     position:relative;
     top:1px;
 }
+
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0; }

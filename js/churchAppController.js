@@ -6,10 +6,11 @@ churchOfChristApp.controller('appController', ["$scope", function($scope){
     var slides = $scope.slides = [];
     var currIndex = 0;
 
+    $scope.currentNavItem = 'home';
 
     $scope.addSlide = function() {
         slides.push({
-            image: '/lewishamchurchofchrist/img/bible-Sunlight_a.jpg',
+            image: '../img/bible-Sunlight_a.jpg',
             text: ['Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me.'][slides.length % 4],
             id: currIndex++,
             title: 'John 14:16'
@@ -19,7 +20,7 @@ churchOfChristApp.controller('appController', ["$scope", function($scope){
             id: currIndex++,
             title: ''
         }, {
-            image: '/lewishamchurchofchrist/img/bible-Sunlight_a.jpg',
+            image: '../img/bible-Sunlight_a.jpg',
             text: ['Image 2',][slides.length % 4],
             id: currIndex++,
             title: ''

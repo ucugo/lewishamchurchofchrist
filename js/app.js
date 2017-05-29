@@ -1,2 +1,1 @@
-
-var churchOfChristApp = angular.module('app', ['ngRoute', 'ui.bootstrap']);
+var churchOfChristApp = angular.module('churchOfChristApp', ['ngRoute', 'ui.bootstrap', 'ngMaterial', 'ngMessages']);

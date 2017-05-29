@@ -2,87 +2,49 @@
 <html lang="en">
 
 <head>
-    <title>Lewisham Church of christ</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Lewisham Church of christ</title>
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css">
+
+
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-material/angular-material.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-aria/angular-aria.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-messages/angular-messages.min.js"></script>
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link href="/lewishamchurchofchrist/css/simple-sidebar.css" rel="stylesheet">
-    <link href="/lewishamchurchofchrist/css/carousel.css" rel="stylesheet">
 
-    <script src = "../bower_components/angular/angular.min.js"></script>
-    <script src = "../bower_components/angular-route/angular-route.min.js"></script>
-    <script type="text/javascript" src="/lewishamchurchofchrist/js/app.js"></script>
-    <script type="text/javascript" src="/lewishamchurchofchrist/js/churchAppController.js"></script>
-    <script type="text/javascript" src="/lewishamchurchofchrist/js/route-provider.js"></script>
-    <![endif]-->
-
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <link href="../css/carousel.css" rel="stylesheet"/>
 </head>
 
-<body>
+<body ng-app="churchOfChristApp" ng-controller="appController"  ng-cloak>
+
+
+<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../js/route-provider.js"></script>
+<script type="text/javascript" src="../js/churchAppController.js"></script>
 <!-- Adding the ng-app declaration to initialize AngularJS -->
-<div id="main" ng-app="app" ng-controller="appController"  class="container-fluid">
+<div id="main" class="container-fluid">
+    <md-content class="md-padding">
+        <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+            <md-nav-item  md-nav-href="#!/home" name="home" value="home">Home</md-nav-item>
+            <md-nav-item md-nav-href="#!/about" name="about" value="about">About</md-nav-item>
+            <md-nav-item md-nav-href="#!/ministries" name="ministries" value="ministries">Ministries</md-nav-item>
+            <md-nav-item md-nav-href="#!/contact" name="contact" value="contact">Contact</md-nav-item>
+            Hi
+        </md-nav-bar>
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navBar">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"  style="color: #ffffff"><label>Lewisham Church of christ</label></a>
-            </div>
-            <div class="navbar-collapse collapse">
-
-                <!-- Left nav -->
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#home" class="home" ng-click="active='home'"><strong>Home</strong></strong></a></li>
-                    <li><a href="#about" class="about " ng-click="active='about'"><strong>About</strong></a></li>
-                    <li><a href="#ministries" class="ministries" ng-click="active='ministries'"><strong>Ministries</strong></a></li>
-                    <li><a href="#contact" class="contact" ng-click="active='contact'"><strong>Contact</strong></a></li>
-                    <li><a href="#">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">A long sub menu <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="disabled"><a class="disabled" href="#">Disabled item</a></li>
-                                            <li><a href="#">One more link</a></li>
-                                            <li><a href="#">Menu item 1</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Another link</a></li>
-                                    <li><a href="#">One more link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </div><!--/.nav-collapse -->
-    </div>
-    <div class="row">
-        <div class="col-sm-1"></div>
-        <div  id="pageLayout" class="col-sm-10" ng-view></div>
-        <div class="col-sm-1"></div>
-    </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div  id="pageLayout" class="col-sm-10" ng-view></div>
+            <div class="col-sm-1"></div>
+        </div>
+    </md-content>
 </div>
 
 <!-- FOOTER -->
@@ -94,18 +56,13 @@
 <!--Scripts-->
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- SmartMenus jQuery plugin -->
-<script src="../bower_components/smartmenus/dist/jquery.smartmenus.js"></script>
-<!-- SmartMenus jQuery Bootstrap Addon -->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.0.0/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
 <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.1.4.js"></script>
 <script src="../bower_components/angular-animate/angular-animate.js"></script>
-
-<script>
-    $("#navBar a").on("click", function(){
-        $("#navBar").find(".active").removeClass("active");
-        $(this).parent().addClass("active");
-    });
-</script>
+<!--<script>-->
+    <!--$("#navBar a").on("click", function(){-->
+        <!--$("#navBar").find(".active").removeClass("active");-->
+        <!--$(this).parent().addClass("active");-->
+    <!--});-->
+<!--</script>-->
 </body>
 </html>
