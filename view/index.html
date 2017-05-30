@@ -43,10 +43,10 @@
 
                 <!-- Left nav -->
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#!/home" class="home" ng-click="active='home'"><strong>Home</strong></strong></a></li>
-                    <li><a href="#!/about" class="about " ng-click="active='about'"><strong>About</strong></a></li>
-                    <li><a href="#!/ministries" class="ministries" ng-click="active='ministries'"><strong>Ministries</strong></a></li>
-                    <li><a href="#!/contact" class="contact" ng-click="active='contact'"><strong>Contact</strong></a></li>
+                    <li ng-class="{active: $location.path() == '/home'}"><a href="#!/home" class="home" ng-click="active='home'"><strong>Home</strong></strong></a></li>
+                    <li ng-class="{active: $location.path() == '/about'}"><a href="#!/about" class="about " ng-click="active='about'"><strong>About</strong></a></li>
+                    <li ng-class="{active: $location.path() == '/ministries'}"><a href="#!/ministries" class="ministries" ng-click="active='ministries'"><strong>Ministries</strong></a></li>
+                    <li ng-class="{active: $location.path() == '/contact'}"><a href="#!/contact" class="contact" ng-click="active='contact'"><strong>Contact</strong></a></li>
                     <li><a href="#">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>

@@ -1,4 +1,5 @@
-churchOfChristApp.controller('appController', ["$scope", function($scope){
+churchOfChristApp.controller('appController', ["$scope", "$location", function($scope, $location){
+    $scope.$location = $location;
     $scope.message = 'Everyone come and see how good I look!';
     $scope.myInterval = 2000;
     $scope.noWrapSlides = false;
