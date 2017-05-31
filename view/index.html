@@ -43,7 +43,7 @@
 
                 <!-- Left nav -->
                 <ul class="nav navbar-nav">
-                    <li ng-class="{active: $location.path() == '/home'}"><a href="#!/home" class="home" ng-click="active='home'"><strong>Home</strong></strong></a></li>
+                    <li ng-class="{active: $location.path() == '/home' || $location.path() == '/'}"><a href="#!/home" class="home" ng-click="active='home'"><strong>Home</strong></strong></a></li>
                     <li ng-class="{active: $location.path() == '/about'}"><a href="#!/about" class="about " ng-click="active='about'"><strong>About</strong></a></li>
                     <li ng-class="{active: $location.path() == '/ministries'}"><a href="#!/ministries" class="ministries" ng-click="active='ministries'"><strong>Ministries</strong></a></li>
                     <li ng-class="{active: $location.path() == '/contact'}"><a href="#!/contact" class="contact" ng-click="active='contact'"><strong>Contact</strong></a></li>
@@ -100,12 +100,5 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.0.0/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
 <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.1.4.js"></script>
 <script src="../bower_components/angular-animate/angular-animate.js"></script>
-
-<script>
-    $("#navBar a").on("click", function(){
-        $("#navBar").find(".active").removeClass("active");
-        $(this).parent().addClass("active");
-    });
-</script>
 </body>
 </html>
