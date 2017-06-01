@@ -2,23 +2,23 @@ churchOfChristApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
 
         .when('/',{
-            templateUrl : 'template/home.html',
+            templateUrl : 'home.html',
             controller  : 'appController'
         })
         .when('/home', {
-            templateUrl : 'template/home.html',
+            templateUrl : 'home.html',
             controller  : 'appController'
         })
         .when('/about', {
-            templateUrl : 'template/about.html',
+            templateUrl : 'about.html',
             controller  : 'appController'
         })
         .when('/ministries', {
-            templateUrl : 'template/ministries.html',
+            templateUrl : 'ministries.html',
             controller  : 'appController'
         })
         .when('/contact', {
-            templateUrl : 'template/contact.html',
+            templateUrl : 'contact.html',
             controller  : 'appController'
         }).
         otherwise({
