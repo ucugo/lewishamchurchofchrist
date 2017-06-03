@@ -71,14 +71,8 @@ p b{
     font-size:18px;
 }
 
-#pageLayout {
-    margin: 4% auto 0 0;
-    border-right: 1px solid;
-    border-left: 1px solid;
-}
-
 #view-layout {
-    margin: 3% 0 0 0;
+    padding-top: 6%;
 }
 
 table {
@@ -154,6 +148,6 @@ label .button-label{
     background-color:#ffab23;
 }
 .worshipButton:active {
-    position:relative;
     top:1px;
+    position: inherit;
 }
