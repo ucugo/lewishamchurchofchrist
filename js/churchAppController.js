@@ -1,5 +1,5 @@
 churchOfChristApp.controller('appController', ["$scope", "$location", function($scope, $location){
-    $scope.$location = $location;
+    $scope.url = $location;
     $scope.currentYear = new Date().getFullYear()
     $scope.message = 'Everyone come and see how good I look!';
     $scope.myInterval = 2000;
