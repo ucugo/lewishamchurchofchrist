@@ -16,7 +16,7 @@ a, a:visited {
 }
 
 a:hover{
-    text-decoration:none;
+    text-decoration:inherit;
 }
 
 section, footer, header, aside, nav{
@@ -44,21 +44,6 @@ section, footer, header, aside, nav{
     -webkit-transition:background-color 0.25s;
     -moz-transition:background-color 0.25s;
     transition:background-color 0.25s;
-}
-
-#navCol a:first-child{
-    border-radius:2px 0 0 2px;
-}
-
-#navCol a:last-child{
-    border-radius:0 2px 2px 0;
-}
-
-#navCol.home .home,
-#navCol.about .about,
-#navCol.ministries .ministries,
-#navCol.contact .contact{
-    background-color:#e35885;
 }
 
 p b{
@@ -99,10 +84,6 @@ h3 {
     font-weight: 400;
     line-height: 1.2em;
     word-wrap:break-word;
-}
-
-.vertical-line {
-    border-top: thick solid #f7f7f7;
 }
 
 label .button-label{

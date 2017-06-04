@@ -26,15 +26,13 @@
     <script src="../js/route-provider.js"></script>
 </head>
 <body ng-app="app" ng-controller="appController"  >
-<div layout-sm="column" id="main" class="container-fluid">
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navBar" ng-include="'../view/template/menu-template.html'"/></div>
-    <div layout="row" id="view-layout">
+<div id="main" class="container-fluid">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navBar" ng-include="'../view/template/menu-template.html'"></div>
+    <div layout="row" id="view-layout" layout-wrap>
         <div flex="10"></div>
         <div flex="55" ng-view></div>
         <div flex="5"></div>
-        <div flex="20">
-            <div flex layout="column" ng-include="'../view/template/view-left-column.html'"></div>
-        </div>
+        <div flex="20" ng-include="'../view/template/left-view-column.html'"></div>
         <div flex="10"></div>
     </div>
 </div>
