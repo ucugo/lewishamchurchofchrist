@@ -17,6 +17,10 @@ churchOfChristApp.config(['$routeProvider', function($routeProvider) {
             templateUrl : 'ministries.html',
             controller  : 'appController'
         })
+        .when('/resources', {
+            templateUrl : 'resources.html',
+            controller  : 'appController'
+        })
         .when('/contact', {
             templateUrl : 'contact.html',
             controller  : 'appController'
