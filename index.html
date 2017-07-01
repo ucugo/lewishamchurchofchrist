@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lewisham Church of christ</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link href="css/simple-sidebar.css" rel="stylesheet">
+	<link href="css/carousel.css" rel="stylesheet">
+
+	<script src ="bower_components/angular/angular.min.js"></script>
+	<script src ="bower_components/angular-route/angular-route.min.js"></script>
+	<script src ="bower_components/angular-material/angular-material.min.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/churchAppController.js"></script>
+	<script src="js/route-provider.js"></script>
+</head>
+<body ng-app="app" ng-controller="appController" flex>
+<div id="main" class="container-fluid" flex>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navBar" ng-include="'view/template/menu-template.html'" flex></div>
+	<div layout="row" id="view-layout" layout-wrap flex>
+		<div flex="10"></div>
+		<div flex="45" ng-view></div>
+		<div flex="5"></div>
+		<div flex="30" ng-include="'view/template/left-view-column.html'"></div>
+		<div flex="10"></div>
+	</div>
+</div>
+<footer>
+	<p class="pull-right"><a href="#">Back to top</a></p>
+	<p>&copy; {{currentYear}} LCOC. &reg;
+</footer>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/smartmenus/dist/jquery.smartmenus.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.0.0/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.1.4.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+</body>
+</html>

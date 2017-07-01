@@ -11,7 +11,7 @@ churchOfChristApp.controller('appController', ["$scope", "$location", function($
 
     $scope.addSlide = function() {
         slides.push({
-            image: '../img/bible-Sunlight_a.jpg',
+            image: 'img/bible-Sunlight_a.jpg',
             text: ['Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me.'][slides.length % 4],
             id: currIndex++,
             title: 'John 14:16'
@@ -21,7 +21,7 @@ churchOfChristApp.controller('appController', ["$scope", "$location", function($
             id: currIndex++,
             title: ''
         }, {
-            image: '../img/bible-Sunlight_a.jpg',
+            image: 'img/bible-Sunlight_a.jpg',
             text: ['Image 2',][slides.length % 4],
             id: currIndex++,
             title: ''
