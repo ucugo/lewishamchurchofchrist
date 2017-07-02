@@ -25,15 +25,18 @@
 	<script src="js/churchAppController.js"></script>
 	<script src="js/route-provider.js"></script>
 </head>
-<body ng-app="app" ng-controller="appController" flex>
-<div id="main" class="container-fluid" flex>
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navBar" ng-include="'view/template/menu-template.html'" flex></div>
-	<div layout="row" id="view-layout" layout-wrap flex>
-		<div flex="10"></div>
-		<div flex="45" ng-view></div>
-		<div flex="5"></div>
-		<div flex="30" ng-include="'view/template/left-view-column.html'"></div>
-		<div flex="10"></div>
+<body ng-app="app" ng-controller="appController" >
+<div id="main" class="container-fluid" >
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navBar" ng-include="'view/template/menu-template.html'" ></div>
+	<div class="container">
+		<div class="row" id="view-layout">
+			<div class="col-sm-8">
+				<div ng-view></div>
+			</div>
+			<div class="col-sm-4">
+				<div ng-include="'view/template/left-view-column.html'"></div>
+			</div>
+		</div>
 	</div>
 </div>
 <footer>
