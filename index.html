@@ -50,5 +50,14 @@
 <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.1.4.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="js/ie10-viewport-bug-workaround.js"></script>
+<script>
+	$(document).on('click','.navbar-collapse.in',function(e) {
+
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+
+});
+</script>
 </body>
 </html>
