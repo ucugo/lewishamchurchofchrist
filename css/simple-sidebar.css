@@ -142,3 +142,8 @@ label .button-label{
     top:1px;
     position: inherit;
 }
+
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
