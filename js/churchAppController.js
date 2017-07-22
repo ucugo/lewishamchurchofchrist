@@ -1,11 +1,15 @@
-churchOfChristApp.controller('appController', ["$scope", "$location", function($scope, $location){
+churchOfChristApp.controller('appController', ["$scope", "$location", "WeeklyMessageDao", function($scope, $location, WeeklyMessageDao){
     $scope.url = $location;
     $scope.currentYear = new Date().getFullYear()
     $scope.message = 'Everyone come and see how good I look!';
     $scope.myInterval = 2000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
+
+    $scope.status
+
     var slides = $scope.slides = [];
+    $scope.messages
     var currIndex = 0;
 
 
@@ -27,12 +31,22 @@ churchOfChristApp.controller('appController', ["$scope", "$location", function($
             title: ''
         });
     };
+    $scope.addSlide();
+    //
+    //function getWeeklyMessages() {
+    //    $scope.messages = WeeklyMessageDao.getWeeklyMessages()
+    //}
+    //getWeeklyMessages()
+
+    WeeklyMessageDao.async().then(function(d) {
+            $scope.messages = d.id;
+        console.log(d.street)
+        });
 
     $scope.randomize = function() {
         var indexes = generateIndexesArray();
         assignNewIndexesToSlides(indexes);
     };
-    $scope.addSlide();
 
     // Randomize logic below
 

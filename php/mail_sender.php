@@ -12,4 +12,4 @@ mail($to, $subject, $message, "From:" . $from);
     <body>
     Submitted
     </body>
-    </html>
+</html>

@@ -29,9 +29,18 @@
     </div>
 </div>
 
-<div layout="row" style="padding-top: 4%">
+<div layout="column" style="padding-top: 4%">
 
     <div  style="border-bottom: solid #4b4f49; text-align: left">
         <h3>God's Word For The Week</h3>
+    </div>
+    <div>
+        <table class="thead-inverse">
+            <tr ng-repeat="m in messages">
+                <td>{{m}}</td>
+                <!--<td>{{m.date}}</td>-->
+                <!--<td>{{m.link}}</td>-->
+            </tr>
+        </table>
     </div>
 </div>
