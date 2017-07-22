@@ -32,15 +32,9 @@ churchOfChristApp.controller('appController', ["$scope", "$location", "WeeklyMes
         });
     };
     $scope.addSlide();
-    //
-    //function getWeeklyMessages() {
-    //    $scope.messages = WeeklyMessageDao.getWeeklyMessages()
-    //}
-    //getWeeklyMessages()
 
     WeeklyMessageDao.async().then(function(d) {
-            $scope.messages = d.id;
-        console.log(d.street)
+            $scope.messages = d;
         });
 
     $scope.randomize = function() {
