@@ -2,42 +2,75 @@
     <div  style=" border-bottom: solid #4b4f49;">
         <table>
             <tr>
-                <td><h2>Contact Us</h2></td>
+                <td><h2 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Contact Us</span></h2></td>
                 <td align="right"><img src="img/contact_2.png" style="vertical-align:text-bottom"></td>
             </tr>
         </table>
     </div>
-    <div  style="margin: 2%">We'd like to hear from you</div>
 
-   <div >
-       <form action="php/mail_sender.php" method="POST" role="form" class="form-horizontal">
-           <legend style="color: #5e5e5e">You can contact us using the form below:</legend>
-           <div class="form-group">
-               <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-               <div class="col-sm-10">
-                   <input type="email" class="form-control" id="inputEmail3" name="email-address" placeholder="Email" required>
-               </div>
-           </div>
-           <div class="form-group">
-               <label for="inputName" class="col-sm-2 control-label">Name</label>
-               <div class="col-sm-10">
-                   <input type="text" class="form-control" id="inputName" name="name" placeholder="Name" required>
-               </div>
-           </div>
-           <div class="form-group">
-               <label for="inputMessage" class="col-sm-2 control-label"></label>
-               <div class="col-sm-10">
-                   <textarea class="form-control" rows="5" id="inputMessage" name="message" placeholder="Message" required></textarea>
-               </div>
-           </div>
+    <section id="contact">
+        <div class="section-content">
+            <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us. </span>We'd like to hear from you</h1>
+        </div>
+        <!--<div class="contact-section">-->
+            <div class="container">
+                <form action="php/mail_sender.php" method="POST" role="form" >
+                    <div class="col-md-6 form-line">
+                        <div class="form-group">
+                            <label for="exampleInputUsername">Your name</label>
+                            <input type="text" class="form-control" id="exampleInputUsername" name="name" placeholder=" Enter Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail">Email Address</label>
+                            <input type="email" name="email-address" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Mobile No.</label>
+                            <input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+                        </div>
+                        <div>
+                            <label for ="description"> Message</label>
+                            <textarea  class="form-control" id="description" name="message" placeholder="Enter Your Message" required></textarea>
+                        </div>
+                        <div>
+                            <br>
+                            <button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </section>
+    <!--<div  style="margin: 2%">We'd like to hear from you</div>-->
 
-           <div class="form-group">
-               <div class="col-sm-offset-2 col-sm-10">
-                   <button type="submit" class="btn btn-default">Submit</button>
-               </div>
-           </div>
-       </form>
-   </div>
+   <!--<div >-->
+       <!--<form action="php/mail_sender.php" method="POST" role="form" class="form-horizontal">-->
+           <!--<legend style="color: #5e5e5e">You can contact us using the form below:</legend>-->
+           <!--<div class="form-group">-->
+               <!--<label for="inputEmail3" class="col-sm-2 control-label">Email</label>-->
+               <!--<div class="col-sm-10">-->
+                   <!--<input type="email" class="form-control" id="inputEmail3" name="email-address" placeholder="Email" required>-->
+               <!--</div>-->
+           <!--</div>-->
+           <!--<div class="form-group">-->
+               <!--<label for="inputName" class="col-sm-2 control-label">Name</label>-->
+               <!--<div class="col-sm-10">-->
+                   <!--<input type="text" class="form-control" id="inputName" name="name" placeholder="Name" required>-->
+               <!--</div>-->
+           <!--</div>-->
+           <!--<div class="form-group">-->
+               <!--<label for="inputMessage" class="col-sm-2 control-label"></label>-->
+               <!--<div class="col-sm-10">-->
+                   <!--<textarea class="form-control" rows="5" id="inputMessage" name="message" placeholder="Message" required></textarea>-->
+               <!--</div>-->
+           <!--</div>-->
+
+           <!--<div class="form-group">-->
+               <!--<div class="col-sm-offset-2 col-sm-10">-->
+                   <!--<button type="submit" class="btn btn-default">Submit</button>-->
+               <!--</div>-->
+           <!--</div>-->
+       <!--</form>-->
+   <!--</div>-->
 
     <div  style="border: thin dotted; margin-top: 3%">
         <table>
