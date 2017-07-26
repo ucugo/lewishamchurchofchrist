@@ -7,9 +7,6 @@ $message = "From: ".$from." Senders email: ".$from." Message: ".$_REQUEST['messa
 
 print($message);
 mail($to, $subject, $message, "From:" . $from);
+header("Location: ../index.html#!/contact");
+    echo "<script type='text/javascript'>'Message sent'</script>"
 ?>
-<html>
-    <body>
-    Submitted
-    </body>
-</html>

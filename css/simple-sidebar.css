@@ -12,7 +12,7 @@ body{
     color: #343434;
 }
 
-p { color: #343434; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 25px; margin: 0 0 24px; color: dimgray }
+p { color: #343434; font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 500; line-height: 25px; margin: 0 0 24px }
 
 
 a { color: #c8c8c8; text-decoration: underline; }

@@ -7,12 +7,14 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description" content="">
 	<meta name="author" content="">
+	<link rel="icon" href="">
 
 	<title>Lewisham Church of christ</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans" rel="stylesheet">
 	<link href="css/contact-form.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/ie10-viewport-bug-workaround.css">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -37,17 +39,16 @@
 	<div ng-include="'view/template/menu-template.html'" ></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8">
-				<div ng-view></div>
+			<div class="col-sm-8" style="background: linear-gradient(to left, #ffffff, #FEF5E7); background: -webkit-linear-gradient(to left, #ffffff, #FEF5E7)">
+				<div ng-view style="min-height: 2000px"></div>
 			</div>
-			<div class="col-sm-4" style="background: linear-gradient(to left, #3a6186 , #FEF5E7); background: -webkit-linear-gradient(to left, #3a6186 , #FEF5E7)">
-				<div ng-include="'view/template/left-view-column.html'"></div>
+			<div class="col-sm-4" style="background: linear-gradient(to left, #3a6186 , #FEF5E7); background: -webkit-linear-gradient(to left, #3a6186 , #FEF5E7); height: 100%">
+				<div ng-include="'view/template/left-view-column.html'" style="min-height: 2000px"></div>
 			</div>
 		</div>
 	</div>
 <footer>
-	<p class="pull-right"><a href="#">Back to top</a></p>
-	<p>&copy; {{currentYear}} LCOC. &reg;
+	<p>{{currentYear}} &copy;  LCOC. &reg;
 </footer>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
