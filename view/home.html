@@ -16,7 +16,7 @@
         </p>
         </div>
 </div>
-<div  style="padding-top: 4%">
+<div  style="padding-top: 1%">
     <div style="text-align: center">
         <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
             <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
@@ -30,38 +30,23 @@
     </div>
 </div>
 
-<div layout="column" style="padding-top: 4%">
+<div layout="column" style="padding-top: 1%">
 
     <div  style="border-bottom: solid #4b4f49; text-align: left">
         <h3 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Recent Sermons</span></h3>
     </div>
     <div style="background-color: #ffffff">
-        <table class="thead-inverse" style="text-align: left">
-            <!--<tr ng-repeat="m in messages">-->
-                <!--<td>{{m.id}}</td>-->
-                <!--<td>-->
-                    <!--<audio controls="controls" preload="none"  controlsList="nodownload ">-->
-                        <!--<source src="https://s3-eu-west-1.amazonaws.com/lewishamcoc/OSCES.mp3">-->
-                        <!--<source src="../audio/OSCES.ogg" type="audio/ogg">-->
-                        <!--Your browser does not support the audio element.-->
-                    <!--</audio>-->
-                <!--</td>-->
-            <!--</tr>-->
-            <tr style="border-bottom: dotted">
-                <td>
-                    <!--<time datetime="2017-07-23"></time>-->
-                    <span><h4 style="line-height: 20%;  margin-bottom:-10px; font-size: 80%">Admitting our sins and confessing to God:</h4></span><br>
-                    <span><h4 style="line-height: 20%;  margin-bottom:-10px; font-size: 80%">by Br Johnson</h4></span><br>
-                    <span><h4 style="line-height: 20%;  margin-bottom:0px; font-size: 80%">23-07-2017</h4></span>
-                </td>
-                <td>
-                    <audio controls="controls" preload="none"  controlsList="nodownload ">
-                    <source src="http://localhost:63342/lewisham/audio/sunday_message_2017_07_23.mp3">
-                    <source src="../audio/OSCES.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-                    </audio>
-                </td>
-            </tr>
-        </table>
+        <div ng-repeat="sermon in sermons">
+            <div>{{sermon.title}}</div>
+            <div>{{sermon.preacher}}</div>
+            <div>{{sermon.date}}</div>
+            <div>
+                <audio controls="controls" preload="none"  controlsList="nodownload" style="width: 100%">
+                <source src="{{sermon.audio_link_mp3}}">
+                <source src="{{sermon.audio_link_ogg}}" type="audio/ogg">
+                Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
     </div>
 </div>

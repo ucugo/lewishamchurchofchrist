@@ -1,7 +1,6 @@
 churchOfChristApp.controller('appController', ["$scope", "$location", "WeeklyMessageDao", function($scope, $location, WeeklyMessageDao){
     $scope.url = $location;
     $scope.currentYear = new Date().getFullYear()
-    $scope.message = 'Everyone come and see how good I look!';
     $scope.myInterval = 2000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
@@ -20,18 +19,28 @@ churchOfChristApp.controller('appController', ["$scope", "$location", "WeeklyMes
             id: currIndex++,
             title: 'John 14:16'
         }, {
-            image: '//www.womenoffaith.com/wp-content/uploads/2015/02/bible-Sunlight.jpg',
-            text: ['Image 2',][slides.length % 4],
+            image: 'img/church/rsz_img_1924.png',
+            text: ['',][slides.length % 4],
             id: currIndex++,
             title: ''
         }, {
-            image: 'img/bible-Sunlight_a.jpg',
-            text: ['Image 2',][slides.length % 4],
+            image: 'img/church/rsz_img_1071.png',
+            text: ['',][slides.length % 4],
             id: currIndex++,
             title: ''
         });
     };
     $scope.addSlide();
+
+    $scope.sermons = [{
+        "title": "Admitting our sins and confessing to God:",
+        "audio_link_mp3": "http://cts-network.co.za/audio/sunday_message_2017_07_23.mp3",
+        "audio_link_ogg": "http://cts-network.co.za/audio/sunday_message_2017_07_23.mp3",
+        "preacher": "by Br Johnson",
+        "date": "23-07-2017"
+    }]
+
+
 
     WeeklyMessageDao.async().then(function(d) {
             $scope.messages = d;
@@ -58,7 +67,6 @@ churchOfChristApp.controller('appController', ["$scope", "$location", "WeeklyMes
         return shuffle(indexes);
     }
 
-    // http://stackoverflow.com/questions/962802#962890
     function shuffle(array) {
         var tmp, current, top = array.length;
 
