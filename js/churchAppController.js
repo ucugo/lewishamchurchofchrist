@@ -14,10 +14,10 @@ churchOfChristApp.controller('appController', ["$scope", "$location", "WeeklyMes
 
     $scope.addSlide = function() {
         slides.push({
-            image: 'img/bible-Sunlight_a.jpg',
-            text: ['Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me.'][slides.length % 4],
+            image: 'img/church/rsz_img_1920.png',
+            text: [''][slides.length % 4],
             id: currIndex++,
-            title: 'John 14:16'
+            title: ''
         }, {
             image: 'img/church/rsz_img_1924.png',
             text: ['',][slides.length % 4],
@@ -33,12 +33,19 @@ churchOfChristApp.controller('appController', ["$scope", "$location", "WeeklyMes
     $scope.addSlide();
 
     $scope.sermons = [{
-        "title": "Admitting our sins and confessing to God:",
+        "title": "Admitting your sins and confessing to God:",
         "audio_link_mp3": "http://cts-network.co.za/audio/sunday_message_2017_07_23.mp3",
         "audio_link_ogg": "http://cts-network.co.za/audio/sunday_message_2017_07_23.mp3",
-        "preacher": "by Br Johnson",
+        "preacher": "Br Johnson",
         "date": "23-07-2017"
-    }]
+    },
+        {
+            "title": "Called for a purpose:",
+            "audio_link_mp3": "http://cts-network.co.za/audio/Bro_sidney_02_sept_2017.mp3",
+            "audio_link_ogg": "http://cts-network.co.za/audio/Bro_sidney_02_sept_2017.mp3",
+            "preacher": "Br S Lewis",
+            "date": "03-09-2017"
+        }]
 
 
 

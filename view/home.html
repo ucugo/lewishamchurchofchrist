@@ -35,18 +35,27 @@
     <div  style="border-bottom: solid #4b4f49; text-align: left">
         <h3 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Recent Sermons</span></h3>
     </div>
-    <div style="background-color: #ffffff">
-        <div ng-repeat="sermon in sermons">
-            <div>{{sermon.title}}</div>
-            <div>{{sermon.preacher}}</div>
-            <div>{{sermon.date}}</div>
-            <div>
-                <audio controls="controls" preload="none"  controlsList="nodownload" style="width: 100%">
-                <source src="{{sermon.audio_link_mp3}}">
-                <source src="{{sermon.audio_link_ogg}}" type="audio/ogg">
-                Your browser does not support the audio element.
-                </audio>
-            </div>
-        </div>
+    <div>
+        <table style="font-family: 'PT Sans', sans-serif;">
+            <thead class="thead-inverse">
+            <tr>
+                <td colspan="1" class="text-center"><h4 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"></span></h4></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="sermon in sermons">
+                <td style="text-align: left">{{sermon.title}}</td>
+                <td>{{sermon.date}}</td>
+                <td>By: {{sermon.preacher}}</td>
+                <td>
+                    <audio controls="controls" preload="none"  controlsList="nodownload" style="width: 100%">
+                        <source src="{{sermon.audio_link_mp3}}">
+                        <source src="{{sermon.audio_link_ogg}}" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
