@@ -1,50 +1,51 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navBar">
+    <div class="container">
 <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-controls="navbarNavDropdown">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
+    <a class="navbar-brand" href="#!/home" ng-click="active='home'"  style="color: #ffffff"><label>Lewisham Church of christ</label></a>
 </div>
-<div class="navbar-collapse collapse">
-    <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-        <a class="navbar-brand" href="#"  style="color: #ffffff"><label>Lewisham Church of christ</label></a>
-        <ul class="nav navbar-nav" style="float: right; position: relative">
-            <li ng-class="{active: url.path() == '/home' || url.path() == '/'}"><a href="#!/home" class="home" ng-click="active='home'"><strong>Home</strong></strong></a></li>
-            <li ng-class="{active: url.path() == '/about'}"><a href="#!/about" class="about " ng-click="active='about'"><strong>About</strong></a></li>
-            <li ng-class="{active: url.path() == '/ministries'}"><a href="#!/ministries" class="ministries" ng-click="active='ministries'"><strong>Ministries</strong></a></li>
-            <li ng-class="{active: url.path() == '/contact'}"><a href="#!/contact" class="contact" ng-click="active='contact'"><strong>Contact</strong></a></li>
-            <li><a href="#">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">A long sub menu <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="disabled"><a class="disabled" href="#">Disabled item</a></li>
-                                    <li><a href="#">One more link</a></li>
-                                    <li><a href="#">Menu item 1</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Another link</a></li>
-                            <li><a href="#">One more link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="col-sm-1"></div>
-    </div>
-</div>
+<div class="navbar-collapse collapse" id="navbarNavDropdown">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-class="{active: url.path() == '/home' || url.path() == '/'}"><a href="#!/home" class="home" ng-click="active='home'"><strong>Home</strong></strong></a></li>
+                <li ng-class="{active: url.path() == '/about'}"><a href="#!/about" class="about " ng-click="active='about'"><strong>About</strong></a></li>
+                <li ng-class="{active: url.path() == '/resources'}"><a href="#!/resources" class="resources" ng-click="active='resources'"><strong>Resources</strong></a></li>
+                <li ng-class="{active: url.path() == '/contact'}"><a href="#!/contact" class="contact" ng-click="active='contact'"><strong>Contact</strong></a></li>
+                <li><a>Ministries <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Evangelism</a></li>
+                        <li><a href="#">Benevolence</a></li>
+                        <li><a href="#">Youth</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Media</a></li>
+                        <!--<li class="divider"></li>-->
+                        <!--<li class="dropdown-header">Nav header</li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                        <!--<li><a href="#">One more separated link <span class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu">-->
+                                <!--<li><a href="#">Action</a></li>-->
+                                <!--<li><a href="#">Another action</a></li>-->
+                                <!--<li><a href="#">A long sub menu <span class="caret"></span></a>-->
+                                    <!--<ul class="dropdown-menu">-->
+                                        <!--<li><a href="#">Action</a></li>-->
+                                        <!--<li><a href="#">Something else here</a></li>-->
+                                        <!--<li class="disabled"><a class="disabled" href="#">Disabled item</a></li>-->
+                                        <!--<li><a href="#">One more link</a></li>-->
+                                        <!--<li><a href="#">Menu item 1</a></li>-->
+                                    <!--</ul>-->
+                                <!--</li>-->
+                                <!--<li><a href="#">Another link</a></li>-->
+                                <!--<li><a href="#">One more link</a></li>-->
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div><!--div container -->
+</nav>

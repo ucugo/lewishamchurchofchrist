@@ -4,7 +4,6 @@
 
 /* Carousel base class */
 .carousel {
-    height: 340px;
     -webkit-box-shadow:0px 2px 2px #6E2C00;
     -moz-box-shadow:0px 2px 2px #6E2C00;
     box-shadow:0px 2px 2px #6E2C00;
@@ -16,6 +15,5 @@
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 340px;
     background-color: #777;
 }

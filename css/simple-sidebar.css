@@ -3,12 +3,24 @@
     padding:0;
 }
 
+html, body, #background { min-height: 100vh; min-width: 100vw; background-color:#FFFFFF;}
+
 body{
-    font:15px/1.3 'Open Sans', sans-serif;
+    font:160.5% "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align:center;
     background:#FFFFFF;
-    color:#000;
+    color: #343434;
 }
+
+p { color: #343434; font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 500; line-height: 25px; margin: 0 0 24px }
+
+
+a { color: #c8c8c8; text-decoration: underline; }
+
+
+a:hover { color: #1c1c1c; text-decoration: underline; }
+
+
 
 a, a:visited {
     outline:none;
@@ -16,7 +28,7 @@ a, a:visited {
 }
 
 a:hover{
-    text-decoration:none;
+    text-decoration:inherit;
 }
 
 section, footer, header, aside, nav{
@@ -46,39 +58,16 @@ section, footer, header, aside, nav{
     transition:background-color 0.25s;
 }
 
-#navCol a:first-child{
-    border-radius:2px 0 0 2px;
-}
-
-#navCol a:last-child{
-    border-radius:0 2px 2px 0;
-}
-
-#navCol.home .home,
-#navCol.about .about,
-#navCol.ministries .ministries,
-#navCol.contact .contact{
-    background-color:#e35885;
-}
-
 p b{
-    color:#ffffff;
+    color: #4b4f49;
     display:inline-block;
     padding:5px 10px;
-    background-color:#c4d7e0;
     border-radius:2px;
-    text-transform:uppercase;
     font-size:18px;
 }
 
-#pageLayout {
-    margin: 4% auto 0 0;
-    border-right: 1px solid;
-    border-left: 1px solid;
-}
-
 #view-layout {
-    margin: 3% 0 0 0;
+    padding-top: 6%;
 }
 
 table {
@@ -105,10 +94,6 @@ h3 {
     font-weight: 400;
     line-height: 1.2em;
     word-wrap:break-word;
-}
-
-.vertical-line {
-    border-top: thick solid #f7f7f7;
 }
 
 label .button-label{
@@ -154,6 +139,11 @@ label .button-label{
     background-color:#ffab23;
 }
 .worshipButton:active {
-    position:relative;
     top:1px;
+    position: inherit;
+}
+
+body {
+  min-height: 2000px;
+  padding-top: 70px;
 }

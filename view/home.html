@@ -1,76 +1,59 @@
-<div id="view-layout">
+<div >
+        <div style="text-align: left">
+            <div class="section-content">
+                <h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Salvation comes through a cross and a crucified Jesus.</span></h1>
+            </div>
+            <div>
+               <p> We are a warm group of Christians who are striving to worship God in the same way that the first century
+                Christians did.
+               </p>
+                <p>In this way we are striving to continue the divine unity that Jesus prayed for (John 17v 21).
+            The church of Christ has congregations throughout the United Kingdom and all over the world. However we
+            have no central organization on earth, but we have a common cause: to be the Church as it was when first
+            instituted by the Lord Jesus Christ.
+            </div>
 
-    <div class="row" style="text-align: center">
-        <div class="col-sm-8">
-            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                    <img ng-src="{{slide.image}}" class="img-responsive" style="height: 350px; width: 1000px">
-                    <div class="carousel-caption">
-                        <h1>{{slide.title}}</h1>
-                        <p>{{slide.text}}</p>
-                    </div>
+        </p>
+        </div>
+</div>
+<div  style="padding-top: 1%">
+    <div style="text-align: center">
+        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+            <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                <img ng-src="{{slide.image}}" class="img-responsive" style="height: 100%; width: 100%" border="0" alt="Null">
+                <div class="carousel-caption">
+                    <h1>{{slide.title}}</h1>
+                    <p>{{slide.text}}</p>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <p>
-                <a href="#" class="worshipButton">
-                    <label style="color: #101010; font-weight: 100">Looking for a christian home?</label><br>
-                    <label>Worship <br> With <br> Us</label>
-                </a>
-            </p>
-            <p>
-                <a href="#" class="worshipButton">
-                    <label style="color: #101010; font-weight: 100">Want to learn about the bible?</label><br>
-                    <label>Learn <br> With <br> Us</label>
-                </a>
-            </p>
-            <p>
-                <a href="#" class="worshipButton">
-                    <label style="color: #101010; font-weight: 100">Want to get involved with us?</label><br>
-                    <label>Serve <br> With <br> Us</label>
-                </a>
-            </p>
-        </div>
     </div>
+</div>
 
-    <div class="row">
+<div layout="column" style="padding-top: 1%">
 
-        <div  id="" class="col-sm-8">
-            <div>
+    <div  style="border-bottom: solid #4b4f49; text-align: left">
+        <h3 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Recent Sermons</span></h3>
+    </div>
+    <div>
+        <table style="font-family: 'PT Sans', sans-serif;">
+            <thead class="thead-inverse">
+            <tr>
+                <td colspan="1" class="text-center"><h4 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"></span></h4></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="sermon in sermons">
+                <td style="text-align: left">{{sermon.title}}</td>
+                <td>{{sermon.date}}</td>
+                <td>By: {{sermon.preacher}}</td>
+                <td>
+                    <audio src="{{sermon.audio_link_mp3}}" controls="controls" preload="none" style="width: 100%">
 
-                <p class="normal">
-                <h4>SALVATION COMES THROUGH A CROSS AND A CRUCIFIED CHRIST.</h4>
-                </p>
-                <p class=normal class="normal">
-                    We are a warm group of Christians who are striving to worship God in the same way that the first century
-                    Christians did.
-                </p>
-                <p class="normal">
-                    In this way we are striving to continue the divine unity that Jesus prayed for in John 17:21.<br>
-                    The church of Christ has congregations throughout the United Kingdom and all over the world.<br>
-                    However we have no central organization on earth, but we have a common cause: to be the Church as
-                    it was when first instituted by the Lord Jesus Christ.
-                </p>
-                <p class="normal">
-                    More over the Bible teaches us that our practices and teachings must be by the authority of our Lord
-                    Jesus Christ.<br>
-                    Whatever you do, whether in word or in deed, do it all in the name of the Lord Jesus, giving thanks
-                    to God the Father through him (Colossians 3v17)..
-                </p>
-                <p class="normal">
-                    Psalms 1: 1 Blessed is the man who walks not in the counsel of the ungodly, Nor stands in the path of
-                    sinners, Nor sits in the seat of the scornful..
-                </p>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <br>
-            <p><strong>We are here</strong></p>
-            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d621.3232453415965!2d-0.028855470785451
-            757!3d51.47113493411288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876025f3e830817%3A0x592ddcceacb
-            a384!2s22+Lucas+St%2C+London+SE8+4QG!5e0!3m2!1sen!2suk!4v1473449094069"
-                       width="250" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></p>
-        </div>
+                    </audio>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
