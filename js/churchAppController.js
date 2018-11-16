@@ -34,15 +34,15 @@ churchOfChristApp.controller('appController', ["$scope", "$location", "WeeklyMes
 
     $scope.sermons = [{
         "title": "Admitting your sins and confessing to God:",
-        "audio_link_mp3": "http://cts-network.co.za/audio/sunday_message_2017_07_23.mp3",
-        "audio_link_ogg": "http://cts-network.co.za/audio/sunday_message_2017_07_23.mp3",
+        "audio_link_mp3": "http://lewishamchurchofchrist.co.uk/audio/sunday_message_2017_07_23.mp3",
+        "audio_link_ogg": "http://lewishamchurchofchrist.co.uk/audio/sunday_message_2017_07_23.mp3",
         "preacher": "Br Johnson",
         "date": "23-07-2017"
     },
         {
             "title": "Called for a purpose:",
-            "audio_link_mp3": "http://cts-network.co.za/audio/Bro_sidney_02_sept_2017.mp3",
-            "audio_link_ogg": "http://cts-network.co.za/audio/Bro_sidney_02_sept_2017.mp3",
+            "audio_link_mp3": "http://lewishamchurchofchrist.co.uk/audio/Bro_sidney_02_sept_2017.mp3",
+            "audio_link_ogg": "http://lewishamchurchofchrist.co.uk/audio/Bro_sidney_02_sept_2017.mp3",
             "preacher": "Br S Lewis",
             "date": "03-09-2017"
         }]
