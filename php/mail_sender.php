@@ -1,5 +1,5 @@
 <?php
-$to      = 'admin@lewishamchurchofchrist.co.uk';
+$to      = 'ucugo1@gmail.com';
 $from = $_REQUEST['email-address'];
 $name = $_REQUEST['name'];
 $subject = 'Contact form message';
